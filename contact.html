@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="forms.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    <h1>Contact & Feedback</h1>
+   <nav>
+      <a href="index.html">Home</a>
+      <a href="clothing.html">Clothing</a>
+      <a href="music and dances.html">Music & Dance</a>
+      <a href="crafts and art.html">Crafts & Art</a>
+      <a href="hosting.html">Hosting</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <form onsubmit="event.preventDefault(); alert('Your request has been submitted!'); this.reset();">
+      <label>Name<br><input type="text" name="name" required></label>
+      <label>Email<br><input type="email" name="email" required></label>
+      <label>Topic of Interest<br>
+        <select name="topic" required>
+          <option value="">--Choose--</option>
+          <option>Clothing</option>
+          <option>Music & Dance</option>
+          <option>Crafts & Art</option>
+        </select>
+      </label>
+      <label>Message<br><textarea name="message" rows="5" required></textarea></label>
+      <button type="submit">Send</button>
+    </form>
+  </main>
+</body>
+</html>
